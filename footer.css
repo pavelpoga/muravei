@@ -1,0 +1,12 @@
+footer.footer {
+    background: var(--black-color);
+    padding: 16px 0;
+    color: var(--white-color);
+}
+
+footer.footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    max-width: 200px;
+}

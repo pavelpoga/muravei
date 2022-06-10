@@ -1,0 +1,37 @@
+.calculate {
+    padding: 64px 0;
+}
+
+.calculate .mt-4 {
+    margin-top: 16px;
+}
+
+.calculate .nav.nav-pills {
+    gap: 16px;
+}
+
+.calculate .tab-pane {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid #F4F4F4;
+}
+
+.calculate .nav-pills .nav-link {
+    border: 1px solid var(--primary-color);
+    color: var(--black-color);
+}
+
+.calculate .nav-pills .nav-link.active, 
+.calculate .nav-pills .show > .nav-link {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.calculate .calculate-img-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculate .calculate-img-price p {
+    margin-top: auto;
+}

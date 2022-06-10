@@ -1,0 +1,130 @@
+header.header {
+    background: #F4F4F4;
+    padding: 16px 0;
+    position: fixed !important;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0 0 0 / 10%);
+    transition: .6s;
+    position: relative;
+}
+
+header.header a {
+    text-decoration: none;
+    color: var(--black-color);
+    text-transform: uppercase;
+}
+
+header.header a.logo {
+    font-weight: 600;
+}
+
+header.header nav.header-menu {
+    display: flex;
+    gap: 20px;
+}
+
+header.header nav.header-menu a {
+    padding: 8px 0;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+}
+
+header.header.colored nav.header-menu a {
+    color: var(--black-color)
+}
+
+header.header nav.header-menu a:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+/* burger-menu */
+.burger {
+    display: none;
+    padding: 16px 10px;
+}
+
+.burger .line {
+    width: 30px;
+    height: 2px;
+    background: var(--black-color);
+}
+
+.burger.active .line {
+    background: transparent;
+}
+
+.burger .line::before,
+.burger .line::after {
+    content: "";
+    width: inherit;
+    height: inherit;
+    background: var(--black-color);
+    display: block;
+    transition: .3s;
+}
+
+.burger .line::after {
+    transform: translateY(10px);
+}
+
+.burger.active .line::after {
+    transform: rotate(225deg);
+}
+
+.burger .line::before {
+    transform: translateY(-10px);
+}
+
+.burger.active .line::before {
+    transform: rotate(-225deg);
+}
+
+/* header after scroll */
+header.header.colored {
+    background: var(--primary-color);
+}
+
+header.header.colored a {
+    color: var(--white-color);
+}
+
+header.header.colored nav.header-menu a:hover {
+    color: var(--white-color);
+    border-bottom: 1px solid var(--white-color);
+}
+
+@media screen and (max-width: 991px) {
+    .burger {
+        display: flex;
+    }
+    header.header nav.header-menu {
+        position: absolute;
+        flex-direction: column;
+        top: -1000px;
+        right: 50px;
+        padding: 16px;
+        background: #F4F4F4;
+        box-shadow: 0 16px 16px rgba(0 0 0 / 10%);
+        transition: .6s;
+    }
+
+    header.header nav.header-menu.active {
+        top: 56px;
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header.header nav.header-menu.active {
+        top: 56px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header.header nav.header-menu.active {
+        right: 10px;
+    }
+}

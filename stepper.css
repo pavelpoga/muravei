@@ -1,0 +1,58 @@
+.stepper {
+    background: url('../../images/stepper.png') center center / cover no-repeat;
+    padding: 64px 0px;
+    margin: 64px 0px;
+}
+
+.stepper .container {
+    display: flex;
+    gap: 24px;
+}
+
+.stepper .container > *{
+    width: 33.33%;
+}
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step-card span {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--white-color);
+}
+
+.step-card h2{
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+.step-card p{
+    margin-top: 20px;
+    color: var(--white-color);
+}
+
+
+@media  screen and (max-width: 768px) {
+    .stepper .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-card svg {
+        transform: rotate(90deg);
+    }
+
+    .stepper .container > * {
+        width: 100%;
+    }
+}

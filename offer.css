@@ -1,0 +1,100 @@
+.offer {
+    background: url('../../images/aaaaaa.png') center center / cover no-repeat;
+    padding: 200px 0 150px;
+}
+
+.offer .container {
+    max-width: 600px;
+}
+
+.offer-text p,
+.offer-text h1 {
+    font-weight: 900;
+    margin: 0;
+}
+
+.offer-text p {
+    font-size: 48px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    animation: companyName 1s;
+}
+
+@keyframes companyName {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.offer-text h1 {
+    font-size: 36px;
+    color: var(--white-color);
+    animation: companyOffer 1.25s;
+}
+
+@keyframes companyOffer {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.offer .container > p {
+    font-weight: 500;
+    color: var(--white-color);
+    margin-top: 16px;
+    animation: companyDescription 1.5s;
+}
+
+@keyframes companyDescription {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }  
+}
+
+.offer .btn {
+    animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+    0% { background-color: #1c87c9; box-shadow: 0 0 3px #1c87c9; }
+    50% { background-color: #32a2e8; box-shadow: 0 0 10px #1c87c9; }
+    100% { background-color: #1c87c9; box-shadow: 0 0 3px #1c87c9; }
+}
+
+#sendFormListMaterials h3,
+#sendFormListMaterials p {
+    margin: 0;
+}
+
+#sendFormListMaterials .form {
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    .offer {
+        padding: 90px 0 30px;
+    }
+ 
+    .offer-text p {
+        font-size: 36px;
+    }
+    .offer-text h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,104 @@
+.products {
+    padding: 64px 0;
+}
+
+.products .title h2 {
+    text-align: center;
+}
+
+.products .title h2::after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 5px;
+    margin-top: 20px !important;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
+.products-card {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.products-item {
+    border-radius: 12px;
+    width: calc(100%/4 - 50px);
+    box-shadow: 0px 8px 16px rgba(0 0 0/10%);
+    padding: 16px;
+}
+
+.products-item p {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.02em;
+}
+
+.products-item img {
+    width: 100%;    
+    height: 260px;
+    object-fit: contain;
+}
+
+.get-products  {
+    width: 800px;
+}
+
+.fancybox-container .products-item {
+    width: calc(100%/2 - 50px);
+}
+.contacts {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.contacts h2 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.contacts .map iframe {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.contacts .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.contacts .contacts-item {
+    width: calc(90% / 4);
+    min-width: 230px;
+    padding: 10px;
+}
+
+.contacts .contacts-item > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+    .products-item {
+        width: calc(100%/2 - 50px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .products-card,
+    .products-item,
+    .fancybox-container .products-item {
+        width: 100%;
+    }
+}
